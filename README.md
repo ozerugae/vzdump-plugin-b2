@@ -24,7 +24,7 @@ storage devices for VMs and backup is a good idea.
 
      ```
      apt-get install -y git
-     git clone https://github.com/padelt/vzdump-plugin-b2.git /usr/local/bin/vzdump-plugin-b2
+     git clone https://github.com/ozerugae/vzdump-plugin-b2 /usr/local/bin/vzdump-plugin-b2
      ```
 
    Alternatively transfer it manually to the server.
@@ -58,8 +58,9 @@ storage devices for VMs and backup is a good idea.
 1. Make available the `b2` command-line utility as documented [here](https://www.backblaze.com/b2/docs/quick_command_line.html):
 
      ```
-     wget -O /usr/local/bin/b2 https://docs.backblaze.com/public/b2_src_code_bundles/b2
-     chmod +x /usr/local/bin/b2
+     git clone https://github.com/Backblaze/B2_Command_Line_Tool.git
+     cd B2_Command_Line_Tool
+     python setup.py install
      ```
 
 ## Testing
